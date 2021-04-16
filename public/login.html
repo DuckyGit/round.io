@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+  <title>Agar.io</title>
+
+  <link rel="stylesheet" type="text/css" href="style.css">
+
+  <script src="libraries/p5.min.js"></script>
+  <script src="libraries/p5.sound.min.js"></script>
+
+  <script src="/socket.io/socket.io.js"></script>
+</head>
+
+<body>
+  <div id="main-ui">
+    <div id="login-ui">
+      <h1 id="agamio">Agam.io</h1>
+
+      <input id="username" placeholder="Username">
+      <input id="password" placeholder="Password" type="password">
+
+      <div id="center-btn-container">
+        <form class="button-form" action="index.html">
+          <button class="center-btn">Back</button>
+        </form>
+  
+        <form class="button-form" action="login.html">
+          <button class="center-btn">Login</button> <!-- TODO: Make this a login button to enter the username/pw values -->
+        </form>
+      </div>
+    </div>
+  </div>
+  </body>
+<script src="sketch.js"></script>
+<script src="enemies.js"></script>
+<script src="drawing.js"></script>
+<script src="raycast.js"></script>
+</html>
